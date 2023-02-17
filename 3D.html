@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animation</title>
+  <style type="text/css">
+    div{
+      position: relative;
+      width: 200px;height: 200px;
+      background-color: aliceblue;
+      animation-name: colors;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      /*animation: colors 2s linear infinite;*/
+    }
+    @keyframes colors{
+      0%{background-color: turquoise; left: 0px}
+      20%{background-color: teal;}
+      40%{background-color: lightblue;}
+      60%{background-color: darkblue;}
+      80%{background-color: deepskyblue;}
+      100%{background-color: forestgreen; left: 1110px}
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <a href="Z-property.html">Z-Property Html</a>
+</body>
+</html>

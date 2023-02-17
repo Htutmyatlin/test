@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bouncing</title>
+	<style type="text/css">
+		.ball{
+			text-align: center;
+			margin-top: 200px;margin-left: 50px;
+			width: 50px;height: 50px;
+			background-color: lightseagreen;
+			border: 3px solid gainsboro;
+			border-radius: 50%;
+			display: inline-block;
+		}
+		.A{
+			animation-name: bounceA;
+			animation-duration: 0.5s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+		}
+		.B{
+			animation: bounceB 0.5s alternate-reverse infinite;
+		}
+		.C{
+			animation: bounceC 0.5s alternate infinite;
+		}
+		@keyframes bounceA{
+			0%{transform: translateY(0px);}
+			100%{transform: translateY(-100px);}
+		}
+		@keyframes bounceB{
+			0%{transform: translateY(0px);}
+			100%{transform: translateY(-100px);}
+		}
+		@keyframes bounceC{
+			0%{transform: translateY(0px);}
+			100%{transform: translateY(-100px);}
+		}
+	</style>
+</head>
+<body>
+	<div class="ball A">A</div>
+	<div class="ball B">B</div>
+	<div class="ball C">C</div>
+</body>
+</html>

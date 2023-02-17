@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Around</title>
+	<style type="text/css">
+		.ball{
+			margin-top: 150px;
+			text-align: center;
+			width: 50px;height: 50px;
+			background-color: darkolivegreen;
+			border: 2px solid tomato;
+			border-radius: 50%;
+			animation: bounceA 0.5s linear infinite;
+			animation-direction: alternate;
+		}
+		@keyframes bounceA{
+			0%{transform: translateX(150px);}
+			100%{transform: translateY(150px);}
+		}
+	</style>
+</head>
+<body>
+	<div class="ball">I'm a ball, and I'm bouncing.</div>
+</body>
+</html>
